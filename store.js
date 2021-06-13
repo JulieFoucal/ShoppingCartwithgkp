@@ -1,5 +1,27 @@
 const API = " http://localhost:3000/api/teddies";
 
+fetch(API)
+    .then((response) => response.json())
+    .then((teddies) => {
+        console.log(teddies);
+        const container = document.querySelector(".shop-items");
+        for (const teddy of teddies) {
+            container.innerHTML += `
+            <div class="shop-item">
+            <h2 class="shop-item-title">${ teddy.name }</h2>
+            <img class="shop-item-image" src="${teddy.imageUrl}" class="imgteddy" />
+        <div class="shop-item-details">
+        <p class="teddydescription">${ teddy.description }</p>
+          <span class="shop-item-price">${ (teddy.price/100).toFixed(2)} €</span>
+          <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
+          </p></a>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+`
+        }
+    })
 
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready)
@@ -9,48 +31,7 @@ if (document.readyState == 'loading') {
 
 
 
-fetch(API)
-    .then((response) => response.json())
-    .then((teddies) => {
-        console.log(teddies);
-        const container = document.querySelector(".container1");
-        for (const teddy of teddies) {
-            container.innerHTML += `
-            <div class="shop-item">
-        <span class="shop-item-title">Album 1</span>
-        <img class="shop-item-image" src="${teddy.imageUrl}" class="imgteddy" />
-        <div class="shop-item-details">
-        <h2 class="teddyname">${ teddy.name }</h2>
-        <p class="teddydescription">${ teddy.description }</p>
-          <span class="shop-item-price">${ (teddy.price/100).toFixed(2)} €</span>
-          <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
-          </p></a>
-          <button class="btn btn-primary shop-item-button" type="button">
-            ADD TO CART
-          </button>
-        </div>
 
-            <div class="carteteddy">
-                <div class="contenucarteimg">
-                    <img src="${teddy.imageUrl}" alt="" class="imgteddy">
-                </div>
-
-                <div class="contenuteddyname">
-                    <h2 class="teddyname">${ teddy.name }</h2>
-                </div>
-
-                <p class="teddydescription">${ teddy.description }
-                </p>
-
-                <p class="teddyprice">${ (teddy.price/100).toFixed(2)} €
-                </p>
-
-               <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
-                </p></a>
-            </div>
-`
-        }
-    })
 
 function ready() {
   const removeBtns = document.querySelectorAll('.btn-danger')

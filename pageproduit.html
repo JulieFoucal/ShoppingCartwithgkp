@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Accueil - Orinoco">
+    <meta name="description" content="Orinoco le site e-commerce pour d'ours en peluche">
+    <script src="https://kit.fontawesome.com/9157bc5015.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="produit.css">
+    <title>Accueil Orinco</title>
+</head>
+
+<header class="header">
+    <div class="containerlogo">
+        <img src="images/logoorinco.png" alt="logo orinco" class="logo">
+    </div>
+
+    <div class="iconepanier">
+        <i class="fas fa-cart-arrow-down"></i>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="grandcontainer">
+
+        <div class="barre">
+            <div class="accueil">
+                <a class="linkbarre" href="./index.html">
+                    <h1 class="barreitems">Accueil</h1>
+                </a>
+            </div>
+
+            <div class="macommande">
+
+                <a class="linkbarre" href="./pagecommande.html">
+                    <h2 class="barreitems">Ma commande</h2>
+                </a>
+
+            </div>
+
+            <div class="monpanier">
+                <a class="linkbarre" href="./pagepanier.html">
+                    <h2 class="barreitems">Panier</h2>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="containerproduit">
+
+            <div class="carteproduit">
+                <div class="contenucarteimg">
+                    <div class="carteimg">
+                        <img src="" alt="imageproduitpanier" class="imgproduitpanier">
+                   <p class="nameproduct"></p>
+                    </div>
+                </div>
+
+                <div class="contenudescription">
+                    <div class="cartedescription">
+                        <p class="imgdescription"></p>
+                        <label class="labelselect">Coloris : </label>
+                        <select class="color" id="color" name="color">
+                            <option value="Tan">Tan</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="carteprix">
+                        <h3 class="priceproduct"></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="boutonajoutpanier" class="btnajoutpanier" type="button">
+                    Ajouter au panier
+            </button>
+
+
+
+        </div>
+
+
+    </div>
+
+    <script src="produit.js"></script>
+
+</body>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="colonnes">
+        <div class="colonne1">
+            <h4>À propos</h4>
+            <a class="linkfooter" href="#">
+                <p>Condition générales de vente</p>
+            </a>
+            <a class="linkfooter" href="#">
+                <p>Données de confidentialités</p>
+            </a>
+        </div>
+        <div class="colonne2">
+            <h4>Assistance</h4>
+            <a class="linkfooter" href="#">
+                <p>Suivi commande</p>
+            </a>
+            <a class="linkfooter" href="#">
+                <p>Nous contacter</p>
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- footer -->
+
+</html>

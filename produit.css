@@ -1,0 +1,204 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(219, 181, 219);
+    width: 100%;
+    height: 8vw;
+    justify-content: space-between;
+}
+
+.containerlogo {
+    width: 20%;
+    height: 8vw;
+}
+
+.logo {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.iconepanier {
+    width: 10%;
+    height: 8vw;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fa-cart-arrow-down {
+    font-size: 4em;
+    color: black;
+    margin-top: 40px;
+}
+
+body {
+    background-color: rgb(243, 234, 236);
+}
+
+.grandcontainer {
+    width: 100%;
+    height: 58vw;
+}
+
+
+.barre {
+    background-color: rgb(216, 97, 97);
+    width: 100%;
+    height: 2vw;
+    display: flex;
+}
+
+.accueil {
+    width: 10%;
+}
+
+.barreitems{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+.macommande {
+    width: 20%;
+}
+
+.monpanier {
+    width: 20%;
+}
+
+.linkbarre {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+.containerproduit {
+    display: flex;
+    width: 95%;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carteproduit {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 23vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contenucarteimg {
+    background-color: white;
+    width: 30%;
+    border-radius: 23px 0px 0px 23px;
+}
+
+.carteimg {
+    width: 100%;
+}
+
+.imgproduitpanier {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 23px 0px 0px 0px;
+}
+
+.contenudescription {
+    padding-left: 10px;
+    background-color: white;
+    width: 60%;
+    border-radius: 0px 23px 23px 0px;
+}
+
+.cartedescription {
+    width: 100%;
+    height: 10vw;
+    font-size: 1.7em;
+}
+
+.color {
+    width: 20%;
+    font-size: 1em;
+    background-color:rgb(186, 186, 216);
+}
+
+.carteprix {
+    width: 30%;
+    height: 3vw;
+}
+
+.btnajoutpanier {
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 2vw;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+    top: 470px;
+    right: 90px;
+    border-color: transparent;
+    font-size: 1.2em;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+}
+
+.priceproduct {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.nameproduct {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    width: 98%;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+
+.colonne1 {
+    width: 40%;
+}
+
+.colonne2 {
+    width: 40%;
+}
+
+.linkfooter {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
