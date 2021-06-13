@@ -1,18 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
-
-@font-face {
-  font-family: 'Booter - Zero Zero';
-  src: url('Fonts/Booter - Zero Zero.woff') format('woff'),
-    url('Fonts/Booter - Zero Zero.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   font-family: Raleway;
-  color: #777;
 }
 
 html,
@@ -22,45 +10,153 @@ body {
   min-height: 100%;
 }
 
-.nav ul {
-  margin: 0;
+.nav {
+  display: flex;
+  background-color: rgb(219, 181, 219);
+  width: 100%;
+  height: 8vw;
+  justify-content: space-between;
 }
 
-.nav li {
-  display: inline;
+.containerlogo {
+  width: 20%;
+  height: 8vw;
 }
 
-.nav a {
-  display: inline-block;
-  padding: 0.5em;
-  color: white;
+.logo {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.iconepanier {
+  display: flex;
+  width: 7%;
+  height: 8vw;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.paniericon {
+  display: flex;
+  font-size: 4em;
+  color: black;
+  margin-top: 40px;
+}
+
+.barre {
+  background-color: rgb(216, 97, 97);
+  width: 100%;
+  height: 3vw;
+  display: flex;
+}
+
+.accueil {
+  width: 10%;
+  font-size: 13px;
+}
+
+.macommande {
+  width: 20%;
+  font-size: 13px;
+}
+
+.monpanier {
+  width: 20%;
+  font-size: 13px;
+}
+
+.linkbarre {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  color: black;
   text-decoration: none;
 }
 
-.main-nav {
+
+
+.shop-item {
+  margin: 30px;
+  background-color: rgb(216, 97, 97);
+  width: 28%;
+  height: 28vw;
+  border-radius: 23px 23px 23px 23px;
+  text-decoration: none;
   text-align: center;
-  font-size: 1.1em;
-  font-weight: lighter;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-nav li {
-  padding: 0 5%;
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 15px;
 }
 
-.nav a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.shop-item-image {
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+  border-radius: 23px 23px 0px 0px;
 }
 
-.main-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('Images/bg.jpg');
-  background-blend-mode: multiply;
-  background-size: cover;
-  padding-bottom: 30px;
+.shop-item-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  width: 100%;
+  color: white;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.teddyname {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.teddydescription {
+  color: white;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.voirproduit {
+  width: 100%;
+  height: 1vw;
+  margin-top: 0;
+  padding-top: 0;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  width: 100%;
+  color: rgb(238, 20, 20);
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
 }
 
 .band-name {
+  background-color: pink;
   text-align: center;
   margin: 0;
   font-size: 4em;
@@ -78,10 +174,10 @@ body {
 }
 
 .container {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5em;
 }
+
 .section-header {
   font-family: 'Metal Mania';
   font-weight: normal;
@@ -158,13 +254,7 @@ body {
   text-align: center;
 }
 
-.btn-primary {
-  color: white;
-  background-color: #56ccf2;
-  border: none;
-  border-radius: 0.3em;
-  font-weight: bold;
-}
+
 
 .btn-primary:hover {
   background-color: #2d9cdb;
@@ -203,40 +293,9 @@ body {
   max-width: 19%;
 }
 
-.shop-item {
-  margin: 30px;
-}
 
-.shop-item-title {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 15px;
-}
 
-.shop-item-image {
-  height: 250px;
-}
 
-.shop-item-details {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-
-.shop-item-price {
-  flex-grow: 1;
-  color: #333;
-}
-
-.shop-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 .cart-header {
   font-weight: bold;

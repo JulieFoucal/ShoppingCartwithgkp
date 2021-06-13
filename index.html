@@ -1,126 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The Generics | Store</title>
-    <meta name="description" content="This is the description" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="store.js" async></script>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-nav nav">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">STORE</a></li>
-          <li><a href="#">ABOUT</a></li>
-        </ul>
-      </nav>
-      <h1 class="band-name band-name-large">Cours avec Julie</h1>
-    </header>
-    <section class="container content-section">
-      <h2 class="section-header">MUSIC</h2>
-      <div class="shop-items">
-        <div class="shop-item">
-          <span class="shop-item-title">Album 1</span>
-          <img class="shop-item-image" src="Images/Album1.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$12.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">Album 2</span>
-          <img class="shop-item-image" src="Images/Album 2.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$14.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">Album 3</span>
-          <img class="shop-item-image" src="Images/Album 3.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$9.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">Album 4</span>
-          <img class="shop-item-image" src="Images/Album 4.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$19.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container content-section">
-      <h2 class="section-header">MERCH</h2>
-      <div class="shop-items">
-        <div class="shop-item">
-          <span class="shop-item-title">T-Shirt</span>
-          <img class="shop-item-image" src="Images/Shirt.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$19.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-title">Coffee Cup</span>
-          <img class="shop-item-image" src="Images/Cofee.png" />
-          <div class="shop-item-details">
-            <span class="shop-item-price">$6.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container content-section">
-      <h2 class="section-header">CART</h2>
-      <div class="cart-row">
-        <span class="cart-item cart-header cart-column">ITEM</span>
-        <span class="cart-price cart-header cart-column">PRICE</span>
-        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+<head>
+  <title>The Generics | Store</title>
+  <meta name="description" content="This is the description" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/9157bc5015.js" crossorigin="anonymous"></script>
+  <script src="store.js" async></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav nav">
+      <div class="containerlogo">
+        <img src="images/logoorinco.png" alt="logo orinco" class="logo">
       </div>
 
-      <div class="cart-items">
-      
+      <div class="iconepanier">
+        <i class="fas fa-cart-arrow-down paniericon"></i> </div>
+
+    </nav>
+
+  </header>
+
+  <section class="container content-section">
+    <div class="barre">
+      <div class="accueil">
+        <a class="linkbarre" href="./index.html">
+          <h1 class="barreitems">Accueil</h1>
+        </a>
       </div>
 
-      <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$0</span>
+      <div class="macommande">
+
+        <a class="linkbarre" href="./pagecommande.html">
+          <h2 class="barreitems">Ma commande</h2>
+        </a>
+
       </div>
-      <button class="btn btn-primary btn-purchase" type="button">
-        PURCHASE
-      </button>
-    </section>
-    <footer class="main-footer">
-      <div class="container main-footer-container">
-        <h3 class="band-name">Julie&Co</h3>
-        <ul class="nav footer-nav">
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCvx7u-NM2tDs_b1p8IUpUaQ"
-              target="_blank"
-            >
-              <img src="Images/YouTube Logo.png" />
-            </a>
-          </li>
-        </ul>
+
+      <div class="monpanier">
+        <a class="linkbarre" href="./pagepanier.html">
+          <h2 class="barreitems">Panier</h2>
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <h2 class="section-header">MUSIC</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Album 1</span>
+        <img class="shop-item-image" src="images/teddy_3.jpg"  />
+        <div class="shop-item-details">
+        <h2 class="teddyname">Teddy</h2>
+        <p class="teddydescription">blabla</p>
+          <span class="shop-item-price">30,00 €</span>
+          <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
+          </p></a>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+
+
+
+  </section>
+  <section class="container content-section">
+    <h2 class="section-header">MERCH</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">T-Shirt</span>
+        <img class="shop-item-image" src="Images/Shirt.png" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$19.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Coffee Cup</span>
+        <img class="shop-item-image" src="Images/Cofee.png" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$6.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+
+    <div class="cart-items">
+
+    </div>
+
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">
+      PURCHASE
+    </button>
+  </section>
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+      <h3 class="band-name">Julie&Co</h3>
+      <ul class="nav footer-nav">
+        <li>
+          <a href="https://www.youtube.com/channel/UCvx7u-NM2tDs_b1p8IUpUaQ" target="_blank">
+            <img src="Images/YouTube Logo.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
