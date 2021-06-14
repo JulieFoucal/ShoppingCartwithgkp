@@ -1,5 +1,6 @@
 const API = " http://localhost:3000/api/teddies";
 
+
 fetch(API)
     .then((response) => response.json())
     .then((teddies) => {
@@ -8,30 +9,29 @@ fetch(API)
         for (const teddy of teddies) {
             container.innerHTML += `
             <div class="shop-item">
-            <h2 class="shop-item-title">${ teddy.name }</h2>
-            <img class="shop-item-image" src="${teddy.imageUrl}" class="imgteddy" />
-        <div class="shop-item-details">
-        <p class="teddydescription">${ teddy.description }</p>
-          <span class="shop-item-price">${ (teddy.price/100).toFixed(2)} €</span>
-          <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
-          </p></a>
-          <button class="btn btn-primary shop-item-button" type="button">
-            ADD TO CART
-          </button>
-        </div>
+            <span class="shop-item-title">${ teddy.name }</span>
+            <img class="shop-item-image" src="${teddy.imageUrl}" />
+        
+              <div class="shop-item-details">
+                <div class="description">${ teddy.description }
+                </div>
+              <span class="shop-item-price">${ (teddy.price/100).toFixed(2)} €</span>
+              <a href="pageproduit.html?id=${teddy._id}"><p class="voirproduit">Voir Produit
+                </p></a>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
 `
         }
     })
+
 
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready)
 } else {
   ready()
 }
-
-
-
-
 
 function ready() {
   const removeBtns = document.querySelectorAll('.btn-danger')
@@ -69,6 +69,7 @@ function purchase() {
   alert("Merci d'avoir passsé commande")
 }
 
+
 //AddToCart
 function addToCart(event) {
   const button = event.target
@@ -96,18 +97,19 @@ function addToCart(event) {
   newItem.innerHTML = `<div class="cart-item cart-column">
             <img
               class="cart-item-image"
-              src="${imageUrl}"
+              src="${teddy.imageUrl}"
               width="100"
               height="100"
             />
-            <span class="cart-item-title">${title}</span>
+            <span class="cart-item-title">${ teddy.name }</span>
           </div>
-
-          <span class="cart-price cart-column">${price}</span>
+          <span class="cart-price cart-column">${ (teddy.price/100).toFixed(2)} €</span>
           <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1" />
             <button class="btn btn-danger" type="button">REMOVE</button>
           </div>`
+  
+          
 
   newItem
     .querySelector('.btn-danger')
@@ -158,24 +160,5 @@ function updateCartTotal() {
     total = total + quantity * price
   }
   total = Math.round(total * 100) / 100
-  document.querySelector('.cart-total-price').innerText = `$${total}`
+  document.querySelector('.cart-total-price').innerText = `€${total}`
 }
-
-//When the cart is updated
-// function updateCartTotal() {
-//   let cartItemContainer = document.getElementsByClassName('cart-items')[0]
-//   let cartRows = cartItemContainer.getElementsByClassName('cart-row')
-//   let total = 0
-//   for (let i = 0; i < cartRows.length; i++) {
-//     let cartRow = cartRows[i]
-//     let priceElement = cartRow.getElementsByClassName('cart-price')[0]
-//     let quantityElement = cartRow.getElementsByClassName(
-//       'cart-quantity-input'
-//     )[0]
-//     const price = parseFloat(priceElement.innerText.replace('$', ''))
-//     const quantity = quantityElement.value
-//     total += price * quantity
-//   }
-//   total = Math.round(total * 100) / 100
-//   document.querySelector('.cart-total-price').innerText = `$${total}`
-// }
